@@ -1,36 +1,63 @@
-import Header from "@/components/common/Header";
 import "./globals.css";
-import Footer from "@/components/common/Footer";
 import { OPEN_GRAPH } from "@/constants/seo";
-import clsx from "clsx";
+
+// nextAuth custom SessionProvider
+import { SessionProvider } from '../components/SessionProvider';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '../pages/api/auth/[...nextauth]';
+
+// theme provider
+import { ThemeProviders } from './themeProviders';
+import Login from '@/components/Login';
+import NavbarMobile from '@/components/NavbarMobile';
+
+import Sidebar from '@/components/Sidebar';
+import ClientProvider from "@/components/ClientProvider";
 
 export const metadata = {
-  title: "Nextjs-appdir-ts-tailwind-starter",
-  description:
-    "A Nextjs starter project with app directory, typescript, tailwindCSS and other beneficial starter tools",
+  title: 'ChatGPT Clone',
+  description: 'clone of ChatGPT.',
   openGraph: OPEN_GRAPH,
 };
 
-const bodyClassName = clsx(
-  "flex flex-col justify-start items-start",
-  "min-h-screen"
-);
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+ 
+  const session = await getServerSession(authOptions);
+    
   return (
-    <html lang='en'>
-      <body className={bodyClassName}>
-        <header className='flex-0'>
-          <Header />
-        </header>
-        <main className='flex-1'>{children}</main>
-        <footer className='flex-0'>
-          <Footer />
-        </footer>
+    <html lang="en">
+      <body className='transition-colors duration-300'>
+        <SessionProvider session={session}>
+          <ThemeProviders>
+            {
+              !session ? <Login /> : 
+                (
+                  <div>
+                    <div>
+                      <NavbarMobile />
+                    </div>
+                    <div className='flex'>
+                      {/* sidebar */}
+                      <div className='hidden lg:block lg:flex-[0.19]'>
+                        <Sidebar />
+                      </div>
+                      
+                      {/* client notifications. */}
+                      <ClientProvider />
+
+                      <div className='flex-1 lg:flex-[0.81]'>
+                        {children}  
+                      </div>
+                    </div>
+                  </div>
+                )
+            }
+          </ThemeProviders>
+        </SessionProvider>
       </body>
     </html>
   );
