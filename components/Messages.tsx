@@ -1,7 +1,7 @@
 'use client';
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark,materialLight, duotoneDark , vs ,gruvboxLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { duotoneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Messages({ text, user }: Message) {
 
@@ -16,6 +16,7 @@ function Messages({ text, user }: Message) {
                 className="w-8 h-8 mt-[10px]"
                 width={32}
                 height={32}
+                referrerPolicy="no-referrer" 
             />
             <div className="!max-w-[80%] p-0 lg:!max-w-[90%] !overflow-scroll">
                 <SyntaxHighlighter className="!rounded-lg"  style={duotoneDark} language="plaintext" >

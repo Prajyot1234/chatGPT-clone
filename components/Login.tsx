@@ -37,7 +37,7 @@ function Login() {
     e.preventDefault();
     try {
       setloading(true);
-      const res = await signIn('google');
+      await signIn('google');
       setTimeout(() => {
         setloading(false);
       }, 2000);

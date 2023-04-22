@@ -10,6 +10,7 @@ type Props = {
 }
 
 function Suggestion(  { suggestion } : Props ) {
+  console.log(suggestion);
   return (
       <div className="font-mono h-screen overflow-scroll bg-white dark:bg-darkTheme dark:text-white">
         <div className="flex flex-col overflow-scroll justify-center place-items-center lg:h-screen ">

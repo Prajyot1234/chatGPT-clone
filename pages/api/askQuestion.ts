@@ -36,8 +36,6 @@ export default async function handler(
         }
     }
 
-    console.log(message);
-    
     await adminDb.collection("users").doc(session?.user?.email).collection("chats").doc(id).collection("messages").add(message);
 
     res.status(200).json({ answer: message.text });

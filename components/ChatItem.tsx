@@ -11,7 +11,7 @@ function  ChatItem() {
   const { data: session } = useSession();
 
   //chat items data
-  const [ chats, loading, error ] = useCollection(
+  const [ chats ] = useCollection(
     session && collection(db,'users',session?.user?.email!,'chats')
   );
   

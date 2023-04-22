@@ -10,6 +10,7 @@ type Props = {
 }
 
 export function SessionProvider({ session, children }: Props) {
+    console.log(session?.expires);
     return (
         <Provider>
             {children}

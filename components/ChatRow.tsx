@@ -1,10 +1,10 @@
 import { db } from "@/firebase";
-import { ChatBubbleLeftIcon, PencilIcon, TrashIcon } from "@heroicons/react/24/outline";
-import { collection, deleteDoc, doc, orderBy, query, updateDoc } from "firebase/firestore";
+import { ChatBubbleLeftIcon, TrashIcon } from "@heroicons/react/24/outline";
+import { collection, deleteDoc, doc, orderBy, query } from "firebase/firestore";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import toast from "react-hot-toast";
 import { Fade } from "react-awesome-reveal";
