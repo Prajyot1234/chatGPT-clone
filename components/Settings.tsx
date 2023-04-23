@@ -27,7 +27,7 @@ function Settings() {
                 router.push('/')
                 setTimeout(() => {
                   signOut();
-                }, 200);
+                }, 2000);
               }}
               className="w-full px-2">
                 <div className="flex rounded-lg p-2 mx-auto w-full hover:bg-darkTheme/70 transition-all duration-300">
