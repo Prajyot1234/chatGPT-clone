@@ -9,7 +9,7 @@ function Messages({ text, user }: Message) {
     
   return (
     <div className={ user?.name == "ChatGPT" ? "bg-[#F7F7F8] dark:bg-[#434654] py-1 lg:py-3": "py-1 lg:py-3" }>
-        <div className="flex space-x-5 !w-screen lg:w-full max-w-[400px] lg:!max-w-4xl my-4 px-2 lg:px-10 mx-auto">
+        <div className="flex space-x-5 !w-screen lg:w-full lg:!max-w-4xl my-4 px-2 lg:px-10 mx-auto">
             <img
                 src={user?.avatar}
                 alt={user?.name}
@@ -18,7 +18,7 @@ function Messages({ text, user }: Message) {
                 height={32}
                 referrerPolicy="no-referrer" 
             />
-            <div className="!max-w-[80%] p-0 lg:!max-w-[90%] !overflow-scroll">
+            <div className="!max-w-[82%] p-0 lg:!max-w-[90%] !overflow-scroll">
                 <SyntaxHighlighter className="!rounded-lg"  style={duotoneDark} language="plaintext" >
                     {text.trim()}
                 </SyntaxHighlighter>
