@@ -2,7 +2,7 @@
 
 <div align="center">
   <h1>Made by <a href="https://www.linkedin.com/in/prajyot-burbure-6b8643190/">Prajyot Burbure</a></h1>
-  <h2>Project made for frontend project showcasing purpose and I love to create weapps that's why.</h2>
+  <h2>Project made for frontend project showcasing purpose and I 💖 to create weapps that's why.</h2>
 </div>
 
 ## TechStack
