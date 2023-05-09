@@ -1,13 +1,12 @@
-# Next.js + app-directory + Tailwind CSS + TypeScript Starter and Boilerplate
+# ChatGPT-clone
 
 <div align="center">
   <h2>🥤nextjs-typescript-tailwindcss☕</h2>
-  <p>Nextjs +app-directory+.Typescript+tailwindCSS and many other development tools packed in one simple starter project. </p>
-  <p>Made by <a href="https://www.linkedin.com/in/baqirnekfar123/">Baqir Nekfar</a></p>
-
+  <p>Made by <a href="https://www.linkedin.com/in/prajyot-burbure-6b8643190/">Prajyot Burbure</a></p>
+  <p>Project made for frontend project showcasing purpose and I love to create weapps that's why.</p>
 </div>
 
-## Features
+## TechStack
 
 This starter simple project powered by bellow tools out of the box!
 
@@ -28,7 +27,7 @@ This starter simple project powered by bellow tools out of the box!
  
  clone:
  ```bash 
- git clone git@github.com:NekfarBaqir/ts-nextjs-appdir-tailwind-starter.git
+ git clone git@github.com:Prajyot1234/chatGPT-clone.git
  ```
 
 ### 2. Installing dependencies 
