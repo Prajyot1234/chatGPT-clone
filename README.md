@@ -1,9 +1,8 @@
 # ChatGPT-clone
 
 <div align="center">
-  <h2>🥤nextjs-typescript-tailwindcss☕</h2>
-  <p>Made by <a href="https://www.linkedin.com/in/prajyot-burbure-6b8643190/">Prajyot Burbure</a></p>
-  <p>Project made for frontend project showcasing purpose and I love to create weapps that's why.</p>
+  <h1>Made by <a href="https://www.linkedin.com/in/prajyot-burbure-6b8643190/">Prajyot Burbure</a></h1>
+  <h2>Project made for frontend project showcasing purpose and I love to create weapps that's why.</h2>
 </div>
 
 ## TechStack
