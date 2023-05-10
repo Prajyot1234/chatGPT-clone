@@ -33,6 +33,7 @@ This starter simple project powered by bellow tools out of the box!
  you can install its dependencies with any tools which you use, but inside the project I used yarn for pre-commit commands.
    so better to use yarn.
 
+<img width="1007" alt="Screenshot 2023-05-10 at 9 37 17 PM" src="https://github.com/Prajyot1234/chatGPT-clone/assets/59968235/48c08bdc-440d-4632-b382-e8484a422e59">
 
 ```bash
 npm install
